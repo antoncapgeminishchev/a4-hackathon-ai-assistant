@@ -18,8 +18,8 @@ class ChatUser(HttpUser):
                     {
                         "content": random.choice(
                             [
-                                "What is included in my Northwind Health Plus plan that is not in standard?",
-                                "What does a Product Manager do?",
+                                "What are the case studies that are using Azure OpenAI?",
+                                "Are there any finance related case studies?",
                                 "What happens in a performance review?",
                                 "Whats your whistleblower policy?",
                             ]

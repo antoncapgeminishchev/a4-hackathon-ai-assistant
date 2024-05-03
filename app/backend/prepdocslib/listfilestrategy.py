@@ -107,7 +107,7 @@ class SharepointListFileStrategy(ListFileStrategy):
                     temp_file.write(json.dumps(page))
                 yield File(content=open(temp_file_path, "rb"), url=page["source_url"])
             except Exception as file_exception:
-                logger.error(f"\tGot an error while processing {page["title"]} -> {file_exception} --> skipping")
+                logger.error(f"\tGot an error while processing {page['title']} -> {file_exception} --> skipping")
                 try:
                     os.remove(temp_file_path)
                 except Exception as file_delete_exception:

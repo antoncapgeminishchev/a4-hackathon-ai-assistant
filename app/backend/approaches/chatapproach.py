@@ -21,10 +21,10 @@ class ChatApproach(Approach, ABC):
     ASSISTANT = "assistant"
 
     query_prompt_few_shots = [
-        {"role": USER, "content": "How did crypto do last year?"},
-        {"role": ASSISTANT, "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": USER, "content": "What are my health plans?"},
-        {"role": ASSISTANT, "content": "Show available health plans"},
+        {"role": USER, "content": "Are there any finance rease stuides?"},
+        {"role": ASSISTANT, "content": "Show the case studies with finance business domain"},
+        {"role": USER, "content": "What are the case studies that use Azure OpenAI?"},
+        {"role": ASSISTANT, "content": "Show the case studies that are using Azure OpenAI technology"},
     ]
     NO_RESPONSE = "0"
 

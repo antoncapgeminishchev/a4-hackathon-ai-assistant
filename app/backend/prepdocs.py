@@ -204,7 +204,7 @@ def setup_file_processors(
     return {
         ".pdf": FileProcessor(pdf_parser, sentence_text_splitter),
         ".html": FileProcessor(html_parser, sentence_text_splitter),
-        ".json": FileProcessor(JsonParser(), SimpleTextSplitter()),
+        ".json": FileProcessor(JsonParser(), SimpleTextSplitter(8000)),
         ".docx": FileProcessor(doc_int_parser, sentence_text_splitter),
         ".pptx": FileProcessor(doc_int_parser, sentence_text_splitter),
         ".xlsx": FileProcessor(doc_int_parser, sentence_text_splitter),
